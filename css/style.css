@@ -9,37 +9,14 @@ body {
 	background-color: #f4f4f4;
 }
 
-/* Global */
 .container {
 	width: 90%;
 	margin: auto;
 	overflow: hidden;
 }
 
-ul {
-	margin: 0;
-	padding: 0;
-}
 
-.button_1 {
-	height: 38px;
-	background: #e8491d;	
-	border: 0;
-	padding-left: 20px;
-	padding-right: 20px;
-	color: #ffffff;
-}
-
-.dark {
-	padding: 15px;
-	background: #35424a;
-	color:#ffffff;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-/* Header */
-header {
+nav {
 	background-color: #463f3a;/*#35424a;*/
 	color: #ffffff;
 	padding-top: 15px;
@@ -50,46 +27,10 @@ header {
 }
 
 nav a {
-	color: #ffffff;
+	color: #d4d1cd;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-size: 16px
-}
-
-header li {
-	float: left;
-	display: inline;
-	padding: 0 20px 0 20px;
-}
-
-header #branding {
-	float: left;
-}
-
-header #branding a{
-	text-decoration: none;
-	color: #e0afa0;
-}
-
-header #branding a:hover{
-	font-weight: bold;
-	color: #B89083;
-}
-
-header #branding h1 {
-	margin: 0;
- 	font: 30px/1.5  'Arizonia', Helvetica, sans-serif;
- 	font-weight: bold;
-}
-
-header ul {
-	float: right;
-	margin-top: 10px;
-}
-
-header .highlight, header .current a {
-	color: #e0afa0;/* #e8491d;*/
-	font-weight: bold;
 }
 
 nav a:hover {
@@ -97,96 +38,120 @@ nav a:hover {
 	font-weight: bold;
 }
 
-/* Showcase */
+nav li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+nav ul {
+	float: right;
+	margin-top: 10px;
+}
+
+#branding {
+	float: left;
+}
+
+#branding a{
+	text-decoration: none;
+	color: #e0afa0;
+}
+
+#branding a:hover{
+	font-weight: bold;
+	color: #B89083;
+}
+
+#branding h1 {
+	margin: 0;
+ 	font: 30px/1.5  'Arizonia', Helvetica, sans-serif;
+ 	font-weight: bold;
+}
+
 #welcome-section {
 	background-color: #8a817c;
-/*	background: url('../img/bag-computer-dress.jpg') no-repeat 0 -70px;
-	background-size: cover;
-	  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);*/
-	text-align: center;
-	color: #ffffff;
-	width: 100%;
+	background: url('../img/bare-tree-birds-dawn-2138922.jpg') no-repeat 0 -70px;
+	background-size: cover;	
+	color: #463f3a;
 	height: 100vh;
-
 }
 
 #welcome-section h1 {
-	margin-top: 250px;
+	margin-top: 100px;
 	font-size: 35px;
 	margin-bottom: 10px;
+	text-align: left;
 }
 
 #welcome-section p {
 	font-size: 20px;
-	width: 70%;
-	margin: 0 auto;
+	width:400px;
+	text-align: left;
+	margin-left: 20px;
+	/*margin: 0 auto;*/
 }
 
-#welcome-section
-
-/* Boxes */
-
 #projects {
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 40px;
 	padding-top: 140px
 	margin-bottom: 150px;
 	padding-bottom: 150px;
-	height: 100vh;
+	color: #463f3a;
+
 }
 
 #projects a {
+	display: inline-block;
+	overflow: hidden;
+	/*display: flex;
+	flex-wrap: wrap;*/
 	text-decoration: none;
-	color: black;
+	color: #463f3a;
+	margin: 20px 5px 20px 5px;
 }
 
 #projects .project-tile {
-	
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	padding: 10px;
+	/*display: inline-block;*/
 
+	text-align: center;
+	width: 45%;
+	/*padding: 10px;*/
 }
 
 #projects .project-tile img {
-	width: 40%;
+	width: 300px;
+	height: 200px;
+
+	transition: all 1s;
+}
+
+#projects .project-tile img:hover {
+	transform: scale(1.05);
 }
 
 #projects h1 {
 	text-align: center;
 	padding-bottom:15px;
 	padding-top: 50px;
+	margin-top: 50px;
 	font-size: 1.5em;
+	border-bottom: 3px solid #e0afa0;
 }
 
-article#main-col {
-	float: left;
-	width: 65%;
-}
-
-ul#services li{
-	list-style: none;
-	padding: 20px;
-	border: #cccccc solid 1px;
-	margin-bottom: 5px;
-	background: #e6e6e6;
-}
 
 .contact {
 	height: 100vh;
 	background: #d4d1cd;
 	text-align: center;
-	
 }
-
 
 .contact h1 {
 	font-size: 28px;
 	padding-top: 150px;
+	color:#463f3a;
 }
 
 .contact a {
@@ -194,50 +159,125 @@ ul#services li{
 	text-decoration: none;
 	list-style-type: none;
 	border-radius: 100%;
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	border: 2px solid #8a817c;
-	line-height: 100px;
-	margin: 110px 40px 0 40px;
+	line-height: 90px;
+	margin: 110px 40px 40px 40px;
 	background: #e0afa0;
 	text-decoration: none;
 	color: #463f3a;
-
-	font-size: 18px;
+	transition: all 1s;
+	font-size: 15px;
 }
 .contact a:hover {
 	color: #3a3430;
 	font-weight: bold;
+	transform: scale(1.1);
 }
 
 
 footer {
 	padding: 20px;
 	margin-top: 0px;
-	color: #ffffff;
+	color: #ecebe9;
 	background-color: #e0afa0 ; /*#e8491d;*/
 	text-align: center;
 }
 
-@media(max-width: 768px){
-  header #branding,
-  header nav,
-  header nav li,
+/*@media only screen and (max-width: 768px){
+  #branding,
+  nav,
+  nav li,
   #projects .project-tile,
-  article#main-col,
-  aside#sidebar{
+  {
     float:none;
     text-align:center;
     width:100%;
   }
 
-  header{
+  nav{
     padding-bottom:20px;
   }
 
   #welcome-section h1{
     margin-top:40px;
   }
+}*/
 
- 
+@media only screen and (max-width: 1000px) {
+	#welcome-section p {
+		font-size: 20px;
+		width:4	00px;
+		text-align: left;
+		margin-left: 10px;
+		margin-top: 100px;
+		color: #ecebe9;
+	}
+
+	#welcome-section h1 {
+		color: #ecebe9;
+		width: 40%;
+		padding-bottom: 0px;
+		margin-top: 80px
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#projects .project-tile {
+		text-align: center;
+		width: 100%;	
+	}	
+	.contact a {
+		width: 80px;
+		height: 80px;
+		border: 2px solid #8a817c;
+		line-height: 90px;
+		margin: 80px 30px 30px 30px;
+		background: #e0afa0;
+		text-decoration: none;
+		color: #463f3a;
+		transition: all 1s;
+		font-size: 15px;
+	}
+	#welcome-section p {
+	font-size: 20px;
+	width:200px;
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	/*margin: 0 auto;*/
+	color: #ecebe9;
+	}
+
+	#welcome-section h1 {
+		color: #ecebe9;
+		width: 40%;
+		padding-bottom: 0px;
+	}
+
+	#projects{
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	nav li {
+		float: left;
+		display: inline;
+		padding: 0 5px 0 5px;
+	}
+	.contact a {
+		width: 80px;
+		height: 80px;
+		border: 2px solid #8a817c;
+		line-height: 90px;
+		margin: 50px 10px 10px 10px;
+		background: #e0afa0;
+		text-decoration: none;
+		color: #463f3a;
+		transition: all 1s;
+	}
+}
 }
